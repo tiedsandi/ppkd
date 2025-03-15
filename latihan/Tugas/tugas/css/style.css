@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  max-width: 768px;
+  margin: 0 auto;
+  height: calc(100vh - 80px);
+  /* border: 1px solid black; */
+}
+
+.title {
+  font-size: 42px;
+}
+
+.para {
+  font-size: 20px;
+}
+
+/* Navbar */
+nav {
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid black;
+  height: 30px;
+}
+
+nav a {
+  color: rgb(88, 88, 255);
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid black;
+  height: 30px;
+  text-align: center;
+}
+
+/* home page */
+.home-container {
+  text-align: center;
+  height: calc(100vh - 160px);
+  padding: 20px 0;
+}
+
+.profile {
+  border-bottom: 1px solid black;
+}
+.profile img {
+  width: 120px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.kemampuan {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  gap: 30px;
+}
+
+.kemampuan h2 {
+  text-align: center;
+  border: 1px solid black;
+  padding: 6px;
+}
+
+.kemampuan .pengalaman-item {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+/* Contact page */
+.contact-container {
+  height: calc(100vh - 160px);
+  padding: 20px 0;
+}
+
+.contact-container h2 {
+  margin-bottom: 20px;
+}
+
+.contact-container button {
+  padding: 10px 20px;
+  background-color: #9b9b9b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.contact-container button:hover {
+  background-color: #666666;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input {
+  width: 40%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.form-group textarea {
+  width: 40%;
+  height: 150px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* About me */
+.about-container {
+  height: calc(100vh - 160px);
+  padding: 20px 0;
+}
+
+.about-container .text-about {
+  display: flex;
+  flex-direction: column;
+}
+.about-container .text-about p {
+  line-height: 30px;
+}

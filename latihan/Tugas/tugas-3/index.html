@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Pengkondisian</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form name="ffrom">
+    <table border="1" cellpadding="10">
+      <tr>
+        <th colspan="2">Travel Bintang Abadi</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>
+Nama          : <input type="text" name="nama" id="nama">
+Tujuan        : <select name="tujuan" id="tujuan">
+                  <option value="Jakarta">Jakarta</option>
+                  <option value="Solo">Solo</option>
+                  <option value="Surabaya">Surabaya</option>
+                </select>
+Kelas         : <select name="kelas" id="kelas">
+                  <option value="Eksekutif">Eksekutif</option>
+                  <option value="Bisnis">Bisnis</option>
+                  <option value="Ekonomi">Ekonomi</option>
+                </select>
+Jumlah Tiket  : <input type="number" name="jumlah" id="jumlah" min="1" style="width: 10%;" >
+Member        : <input type="checkbox" name="member" id="member">
+      </pre>
+        </td>
+        <td>
+          <pre>
+Harga Tiket   : <input type="text" name="harga" id="harga" readonly>
+Sub Total     : <input type="text" name="sub" id="sub" readonly>
+Diskon        : <input type="text" name="diskon" id="diskon" readonly>
+Total Bayar   : <input type="text" name="total" id="total" readonly>
+          </pre>
+        </td>
+      </tr>
+      <th colspan="2">
+        <input type="button" value="Hitung" onclick="hitung()">
+        <input type="reset" value="Reset">
+      </th>
+    </table>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

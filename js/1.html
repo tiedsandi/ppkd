@@ -1,0 +1,71 @@
+<HTML>
+
+<HEAD>
+  <TITLE>Memasukkan Bilangan</TITLE>
+</HEAD>
+
+<BODY>
+  <SCRIPT>
+    function jumlah() {
+      var bil1 = parseFloat(document.fform.bilangan1.value);
+      if (isNaN(bil1))
+        bil1 = 0.0;
+      var bil2 = parseFloat(document.fform.bilangan2.value);
+      if (isNaN(bil2))
+        bil2 = 0.0;
+      var hasil = bil1 + bil2;
+      document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+      alert("Hasil Penjumlahan = " + hasil);
+    }
+    function pengurangan() {
+      var bil1 = parseFloat(document.fform.bilangan1.value);
+      if (isNaN(bil1))
+        bil1 = 0.0;
+      var bil2 = parseFloat(document.fform.bilangan2.value);
+      if (isNaN(bil2))
+        bil2 = 0.0;
+      var hasil = bil1 - bil2;
+      document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+      // alert("Hasil Pengurangan = " + hasil);
+    }
+    function perkalian() {
+      var bil1 = parseFloat(document.fform.bilangan1.value);
+      if (isNaN(bil1))
+        bil1 = 0.0;
+      var bil2 = parseFloat(document.fform.bilangan2.value);
+      if (isNaN(bil2))
+        bil2 = 0.0;
+      var hasil = bil1 * bil2;
+      document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+      // alert("Hasil Perkalian = " + hasil);
+    }
+    function pembagian() {
+      var bil1 = parseFloat(document.fform.bilangan1.value);
+      if (isNaN(bil1))
+        bil1 = 0.0;
+      var bil2 = parseFloat(document.getElementById("bilangan2").value);
+      if (isNaN(bil2))
+        bil2 = 0.0;
+      var hasil = bil1 / bil2;
+      document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+      // alert("Hasil Pembagian = " + hasil);
+    }
+  </SCRIPT>
+  <form name="fform">
+    <h1><br>Memasukkan Data Lewat Keyboard</H1>
+    <pre>
+  Bilangan Pertama :<input type="text" size="11" name="bilangan1">
+  Bilangan Kedua   :<input type="text" size="11" name="bilangan2" id="bilangan2">
+    </pre>
+    <p>
+      <input TYPE="button" value="Jumlahkan" onclick="jumlah()">
+      <input TYPE="button" value="Pengurangan" onclick="pengurangan()">
+      <input TYPE="button" value="Perkalian" onclick="perkalian()">
+      <input TYPE="button" value="Pembagian" onclick="pembagian()">
+      <input TYPE="reset" value="Ulang">
+    </p>
+    <h2 id="hasil">Hasil: -</h2>
+  </form>
+</BODY>
+
+</HTML>

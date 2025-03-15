@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objek Javascript</title>
+</head>
+
+<style>
+  body {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+  }
+
+  .container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+  }
+</style>
+
+<body>
+  <form name="fform" class="container" onsubmit="return false;">
+    <h2>Data Mahasiswa</h2>
+    <h2>PPKD Jakarta Pusat</h2>
+    <hr>
+    <pre>
+NIM                 : <input type="text" size="11" name="nim">
+Nama Mahasiswa      : <input type="text" size="11" name="nama">
+Jenis Kelamin       : <input type="radio" name="Kelamin" value="Laki-laki" >Laki-laki
+                      <input type="radio" name="Kelamin" value="Perempuan" >Perempuan
+                      <input type="radio" name="Kelamin" value="BOT" checked>NPC
+Agama               : <select name="Agama" >
+                        <option value=""> Pilih Agama</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Konghucu">Konghucu</option>
+                      </select>
+Status              : <input type="checkbox" name="status" value="Aktif">Aktif
+Jurusan di PPKD     : <select name="Jurusan" >
+                        <option value=""> Pilih Jurusan</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Teknik Komputer">Teknik Komputer</option>
+                        <option value="Manajemen Informatika">Manajemen Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                      </select>
+Komentar            : <textarea name="komentar" cols="40" rows="5"></textarea>
+    </pre>
+
+    <button type="submit" onclick="kirim()">Kirim</button>
+    <button type="reset" onclick="ulang()">Ulang</button>
+
+  </form>
+
+  <script>
+    function ulang() {
+      document.getElementById("nim").innerHTML = "";
+      document.getElementById("nama").innerHTML = "";
+      document.getElementById("kelamin").innerHTML = "";
+      document.getElementById("agama").innerHTML = "";
+      document.getElementById("status").innerHTML = "";
+      document.getElementById("jurusan").innerHTML = "";
+      document.getElementById("komentar").innerHTML = "";
+    }
+    function kirim() {
+      var nim = document.fform.nim.value;
+      var nama = document.fform.nama.value;
+      var kelamin = document.fform.Kelamin.value;
+      var agama = document.fform.Agama.value;
+      var status = document.fform.status.checked;
+      var jurusan = document.fform.Jurusan.value;
+      var komentar = document.fform.komentar.value;
+
+      console.log(status);
+
+      // alert("NIM : " + nim + "\nNama : " + nama + "\nJenis Kelamin : " + kelamin + "\nAgama : " + agama + "\nStatus : " + status + "\nJurusan : " + jurusan + "\nKomentar : " + komentar);
+
+      document.getElementById("nim").innerHTML = nim;
+      document.getElementById("nama").innerHTML = nama;
+      document.getElementById("kelamin").innerHTML = kelamin;
+      document.getElementById("agama").innerHTML = agama;
+      document.getElementById("status").innerHTML = status ? "Aktif" : "Tidak Aktif";
+      document.getElementById("jurusan").innerHTML = jurusan;
+      document.getElementById("komentar").innerHTML = komentar;
+
+    }
+  </script>
+
+  <h3>Data Mahasiswa PPKD</h3>
+  <pre>
+NIM                 : <b id="nim"></b>
+Nama Mahasiswa      : <b id="nama"></b>
+Jenis Kelamin       : <b id="kelamin"></b>
+Agama               : <b id="agama"></b>
+Status              : <b id="status"></b>
+Jurusan di PPKD     : <b id="jurusan"></b>
+Komentar            : <b id="komentar"></b>
+    </pre>
+</body>
+
+</html>

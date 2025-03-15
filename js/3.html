@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS - 3</title>
+</head>
+
+<body>
+  <div class="app">
+  </div>
+  <h2 id="umur"></h2>
+
+  <script>
+    let nama = 'Joko';
+    let myAge = 8;
+    let age = 5;
+
+    if (myAge < age)
+    {
+      document.getElementById('umur').innerHTML = 'Saya masih balita';
+    } else
+    {
+      document.getElementById('umur').innerHTML = 'Saya masih anak-anak';
+
+    }
+
+    if (nama)
+    {
+      document.querySelector('.app').innerHTML = `<h1>Halo, ${nama} umur saya ${myAge}</h1>`;
+    } else
+    {
+      document.querySelector('.app').innerHTML = `<h1>Halo, Pengunjung</h1>`;
+    }
+  </script>
+</body>
+
+</html>

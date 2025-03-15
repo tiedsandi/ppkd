@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitung Bunga</title>
+</head>
+
+<body>
+  <form name="fform">
+    <h2>Perhitungan Bunga</h2>
+    <pre>
+Data Input :
+Saldo       <input type="number" name="saldo">
+Bungan      <input type="number" name="bunga">%
+waktu       <input type="number" name="waktu">Bulan
+    </pre>
+    <div class="button-box">
+      <input type="button" value="Submit" onclick="hitungBunga()">
+      <input type="reset" value="Reset" onclick="resetOutput()">
+    </div>
+
+    <pre>
+Hasil Perhitungan :
+<p id="output"></p>
+    </pre>
+  </form>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
