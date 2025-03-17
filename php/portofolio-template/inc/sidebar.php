@@ -201,8 +201,20 @@
             </a>
         </li>
         <li class="nav-item">
+            <a class="nav-link collapsed" href="project.php">
+                <i class="bi bi-book"></i>
+                <span>Project</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="blog.php">
+                <i class="bi bi-newspaper"></i>
+                <span>Blog</span>
+            </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link collapsed" href="setting.php?sidebar=setting">
-                <i class="bi bi-person"></i>
+                <i class="bi bi-gear"></i>
                 <span>Setting</span>
             </a>
         </li><!-- End Profile Page Nav -->
